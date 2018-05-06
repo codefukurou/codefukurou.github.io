@@ -1,6 +1,6 @@
 #page{
     font-family: 'Raleway', sans-serif;
-    color: hsl(240,00%,25%);
+    color: hsl(240,00%,40%);
     width: 100%;
     height: 100%;
 }
@@ -12,11 +12,12 @@
 
 #info-block{
     align-items: center;
-    border-right: 1px solid hsl(240,00%,25%);
+    border-right: 1px solid hsl(240,00%,40%);
     width: 200px;
     height: 100%;
     position: fixed;
     float:left;
+    text-align: center;
 }
 
 #profile-image{
@@ -57,20 +58,85 @@
 }
 
 .navigation-button{
-    color: hsl(240,00%,25%);
     text-decoration: none;
+    color: hsl(240,00%,40%);
     font-size: 1.75em;
     font-weight: 300;
+    transition:.5s
+}
+
+.navigation-button:hover{
+    color: hsl(240,60%,80%);
 }
 
 .info-box{
     padding: 20px 0px;
     width: 90%;
-    border-bottom: 1px solid hsl(240,00%,25%);
+    border-bottom: 1px solid hsl(240,00%,40%);
 }
 
 #social-media-box{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.fa-github-square{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transition: .5s;
+    color: hsl(240,00%,40%)
+}
+
+.fa-github-square:hover{
+    color: hsl(240,60%,80%);
+}
+
+.fa-facebook{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transition: .5s;
+    color: hsl(240,00%,40%)
+}
+
+.fa-facebook:hover{
+    color: hsl(240,60%,80%);
+}
+
+.fa-linkedin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transition: .5s;
+    color: hsl(240,00%,40%)
+}
+
+.fa-linkedin:hover{
+    color: hsl(240,60%,80%);
+}
+
+h1 {
+    line-height: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(240,60%,40%);
+    transition: .5s;
+}
+
+a:hover {
+    color: hsl(240,60%,80%);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#content-block li{
+    margin: 5px 0;
 }
