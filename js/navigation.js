@@ -1,6 +1,6 @@
 window.onload = function () {
     var about_button = document.getElementById("about-button");
-    var services_button = document.getElementById("services-button");
+    var tutoring_button = document.getElementById("tutoring-button");
     var blog_button = document.getElementById("blog-button");
     var projects_button = document.getElementById("projects-button");
     var contact_button = document.getElementById("contact-button");
@@ -9,9 +9,9 @@ window.onload = function () {
         injectPage("about.md");
         return false;
     }
-    services_button.onclick = function() {
-        injectPage("services.md");
-        // return false;
+    tutoring_button.onclick = function() {
+        injectPage("tutoring.md");
+        return false;
     }
     blog_button.onclick = function() {
         injectPage("blog.md");
